@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
+import Navbarr from './Navbarr'
 import Profile from './Profile'
 import About from './About'
 import Skills from './Skills'
@@ -10,7 +10,7 @@ import Portfolios from './Portfolios'
 const Home = () => {
   return (
             <section>
-                <Navbar />
+                <Navbarr />
                     <div className="container">
                         <div className="row">
                             <div className="col s12 m3">
