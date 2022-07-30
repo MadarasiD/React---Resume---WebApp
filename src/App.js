@@ -12,15 +12,14 @@ import Portfolios from './components/Portfolios';
 function App() {
   return (
     <Router>
-        <>
-          <Route exact path="/" component={Home}/>
+      
             <Routes>
-              <Route exact path="/skills" component={Skills}/>
-              <Route exact path="/experiences" component={Experiences}/>
-              <Route exact path="/educations" component={Educations}/>
-              <Route exact path="/portfolios" component={Portfolios}/>
+              <Route exact path="/" element={<Home />}/>
+              <Route  path="/skills" element={<Skills />}/>
+              <Route  path="/experiences" element={<Experiences />}/>
+              <Route  path="/educations" element={<Educations />}/>
+              <Route  path="/portfolios" element={<Portfolios />}/>
             </Routes>
-        </>
     </Router>
   );
 }

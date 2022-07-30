@@ -7,9 +7,8 @@ import Experiences from './Experiences'
 import Educations from './Educations'
 import Portfolios from './Portfolios'
 
-export default class Home extends Component {
-    render() {
-        return (
+const Home = () => {
+  return (
             <section>
                 <Navbar />
                     <div className="container">
@@ -28,6 +27,10 @@ export default class Home extends Component {
                             </div>
                     </div>
             </section>
-        )
-    }
+  )    
+    
 }
+  
+
+
+export default Home
