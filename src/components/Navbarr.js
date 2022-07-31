@@ -2,7 +2,11 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "materialize-css/dist/css/materialize.min.css";
 import { TbHome } from "react-icons/tb";
-import { GiSkills } from 'react-icons/gi'
+import { GiSkills } from 'react-icons/gi';
+import { BsPersonBadgeFill } from 'react-icons/bs';
+import { FaUserGraduate } from 'react-icons/fa'
+import { FaRegAddressCard } from 'react-icons/fa'
+
 
 const mystyle = {
     display: "flex",
@@ -26,22 +30,31 @@ const Navbarr = () => {
           <ul class="right hide-on-med-and-down">
             <li>
               <Link to='/'>
-                    <i style={mystyle}> <TbHome size="medium"  style={{paddingRight: '5px'}}/> Home</i>
+                    <i style={mystyle}> <TbHome size={30}  style={{paddingRight: '5px'}}/> Home</i>
               </Link>
             </li>
             <li>
             <Link to='/skills'>
-                    <i style={mystyle}> <GiSkills  /> Skills</i>
+                    <i style={mystyle}> <GiSkills size={30} style={{paddingRight: '5px'}}   /> Skills</i>
               </Link>
             </li>
             <li>
-              <a href="/experiences">Experiences</a>
+            <Link to='/experiences'>
+                    <i style={mystyle}> <BsPersonBadgeFill size={30} style={{paddingRight: '5px'}}   /> Experiences</i>
+              </Link>
+              
             </li>
             <li>
-              <a href="/educations">Educations</a>
+            <Link to='/educations'>
+                    <i style={mystyle}> <FaUserGraduate size={30} style={{paddingRight: '5px'}}   /> Educations</i>
+              </Link>
+              
             </li>
             <li>
-              <a href="/portfolios">Portfolios</a>
+            <Link to='/portfolios'>
+                    <i style={mystyle}> <FaRegAddressCard size={30} style={{paddingRight: '5px'}}   />Portfolios</i>
+              </Link>
+              
             </li>
           </ul>
         </div>
