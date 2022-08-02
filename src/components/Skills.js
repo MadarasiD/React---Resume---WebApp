@@ -1,33 +1,44 @@
 import React from "react";
 
+
 const Skills = () => {
   return (
     <div>
+        
       <div className="card">
         <div className="card-content">
           <h6>
             <u>Szakmai készségek:</u>
           </h6>
           <div className="row mt-top">
-            <div className="col s4">
-              <p>HTML</p>
-              <div class="preloader-wrapper big active">
-                <div class="circle spinner-blue-only">
-                  <div class="circle left">
-                    <div class="circle"></div>
-                  </div>
-                  <div class="gap-patch">
-                    <div class="circle"></div>
-                  </div>
-                  <div class="circle right">
-                    <div class="circle"></div>
-                  </div>
+            <div className="col s6">
+                <p>HTML - HyperText Markup Language</p>
+                <div className="progress grey lighten-1">
+                    <div 
+                    className="determinate blue"
+                    style={{ width: '80%'}} >
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <div className="col s6">
+                <p>Css - Cascading Style Sheets</p>
+                <div className="progress grey lighten-1">
+                    <div 
+                    className="determinate blue"
+                    style={{ width: '80%'}} >
+                        
+                    </div>
+
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 };
