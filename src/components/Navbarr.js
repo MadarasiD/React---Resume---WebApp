@@ -18,7 +18,7 @@ const mystyle = {
 const Navbarr = () => {
   return (
     <>
-      <nav>
+      <nav className="fixed">
         <div class="nav-wrapper teal darken-1">
                 <Link to='/' class="brand-logo">
                     <i style={{paddingLeft: '15px'}}> Madarasi Dániel</i>
